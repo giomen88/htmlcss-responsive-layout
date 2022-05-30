@@ -1,0 +1,18 @@
+@media screen and (min-width 768px) {
+    .application .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .application .card {
+        width: calc(100% / 3 - 30px);
+    }
+
+    .application .large-card {
+        width: calc(100% / 3 * 2 - 30px);
+    }
+}
+
+@media screen and (min-width 992px) {}
+
+@media screen and (min-width 1200px) {}
