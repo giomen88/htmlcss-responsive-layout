@@ -1,18 +1,119 @@
-@media screen and (min-width 768px) {
+@media screen and (min-width: 768px) {
+
     .application .cards {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
     .application .card {
-        width: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
     }
 
     .application .large-card {
-        width: calc(100% / 3 * 2 - 30px);
+        flex-basis: calc(100% / 3 * 2 - 30px);
+    }
+
+    .testimonials .card {
+        flex-direction: row;
+    }
+
+    .testimonials img {
+        flex-basis: 20%;
+    }
+
+    .benefits .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefits .card {
+        flex-basis: calc(50% - 30px);
+    }
+
+    .about-us .row {
+        flex-direction: row;
+    }
+
+    .about-us .text {
+        flex-basis: 60%;
+    }
+
+    .about-us .linkedin {
+        flex-basis: 40%;
     }
 }
 
-@media screen and (min-width 992px) {}
 
-@media screen and (min-width 1200px) {}
+@media screen and (min-width: 992px) {
+
+    .container {
+        width: 70%;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav-bar ul {
+        display: block;
+    }
+
+    .application .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .application .card {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    .application .large-card {
+        flex-basis: calc(100% / 3 * 2 - 30px);
+    }
+
+    .planning .row {
+        flex-direction: row;
+    }
+
+    .planning .text,
+    .planning .card {
+        flex-basis: 50%;
+    }
+
+    .testimonials .card {
+        flex-direction: row;
+    }
+
+    .testimonials img {
+        flex-basis: 20%;
+    }
+
+    .benefits .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefits .card {
+        flex-basis: calc(100% / 3 - 30px);
+    }
+
+    .about-us .row {
+        flex-direction: row;
+    }
+
+    .about-us .text {
+        flex-basis: 60%;
+    }
+
+    .about-us .linkedin {
+        flex-basis: 40%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+
+}
