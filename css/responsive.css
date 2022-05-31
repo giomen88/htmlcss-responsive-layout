@@ -9,9 +9,10 @@
 
     .application .card {
         flex-basis: calc(100% / 3 - 30px);
+        margin: 15px 15px;
     }
 
-    .application .large-card {
+    .application .card:first-child {
         flex-basis: calc(100% / 3 * 2 - 30px);
     }
 

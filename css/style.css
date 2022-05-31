@@ -28,15 +28,6 @@ footer {
     height: 200px;
 }
 
-/* DA CANCELLARE */
-/* .row {
-    height: 1500px;
-} */
-
-/* DA CANCELLARE */
-
-
-
 /* UTILS */
 
 /* 
@@ -70,7 +61,7 @@ violet - rgb(151,146,228)
 }
 
 .padd-20 {
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 .mb-20 {
@@ -93,6 +84,16 @@ violet - rgb(151,146,228)
     padding: 8px 50px;
     text-align: center;
     border-radius: 30px;
+}
+
+.circle-btn {
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
 }
 
 /* HEADER */
@@ -124,9 +125,6 @@ header .nav-bar {
 /* MAIN */
 
 /* APPLICATION */
-.application .cards {
-    /* height: 100%; */
-}
 
 .application .card {
     width: 100%;
@@ -137,6 +135,7 @@ header .nav-bar {
 
 .application .card h4 {
     color: rgb(0, 132, 253);
+    text-align: center;
 }
 
 .application .card a {
@@ -148,9 +147,20 @@ header .nav-bar {
     width: 70%;
 }
 
+.application .card span {
+    color: rgb(0, 132, 253);
+    text-align: center;
+    display: block;
+}
+
 /* PLANNING */
 .planning .text {
     flex-basis: 50%;
+    width: 100%;
+    color: rgb(255 255 255);
+}
+
+.planning .text img {
     width: 100%;
 }
 
@@ -158,6 +168,15 @@ header .nav-bar {
     flex-basis: 50%;
     width: 100%;
     background-color: rgb(255 255 255);
+    text-align: center;
+}
+
+.planning .card img {
+    width: 100%;
+}
+
+.planning .card a {
+    background-color: rgb(151, 146, 228);
 }
 
 /* TESTIMONIALS */
