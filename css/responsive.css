@@ -1,3 +1,5 @@
+/* TABLET */
+
 @media screen and (min-width: 768px) {
 
     .application .cards {
@@ -43,6 +45,7 @@
     }
 }
 
+/* DESKTOP */
 
 @media screen and (min-width: 992px) {
 
@@ -50,12 +53,18 @@
         width: 70%;
     }
 
-    .burger {
+    .hamburger-menu {
         display: none;
     }
 
     .nav-bar ul {
-        display: block;
+        display: flex;
+        list-style-type: none;
+    }
+
+    .li {
+        width: calc(100% / 5);
+        height: 70px;
     }
 
     .application .cards {
@@ -111,9 +120,11 @@
 
 }
 
+/* LARGE DESKTOP */
+
 @media screen and (min-width: 1200px) {
     .container {
-        width: 50%;
+        width: 60%;
     }
 
 }

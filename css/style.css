@@ -11,7 +11,7 @@ body {
 
 header {
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: rgb(0, 132, 253);
     position: fixed;
     top: 0;
@@ -19,7 +19,7 @@ header {
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 footer {
@@ -28,35 +28,10 @@ footer {
     height: 200px;
 }
 
-ul {
-    list-style-type: none;
-}
-
 /* DA CANCELLARE */
-.row {
+/* .row {
     height: 1500px;
-}
-
-h1,
-h2,
-h3,
-h4,
-p,
-span,
-img,
-a {
-    height: 30px;
-    width: 100%;
-    border: 2px dashed rgb(0 0 0);
-}
-
-.border-b {
-    border: 2px dashed rgb(0 0 0);
-}
-
-.border-r {
-    border: 3px dashed rgb(255 0 0);
-}
+} */
 
 /* DA CANCELLARE */
 
@@ -77,6 +52,7 @@ violet - rgb(151,146,228)
 
 .flex {
     display: flex;
+    justify-content: space-between;
 }
 
 .flex-col {
@@ -111,20 +87,33 @@ violet - rgb(151,146,228)
     margin-bottom: 20px;
 }
 
+.btn {
+    text-decoration: none;
+    height: 40px;
+    padding: 8px 50px;
+    text-align: center;
+    border-radius: 30px;
+}
+
 /* HEADER */
 
 header .nav-bar {
-    height: 100%;
     color: rgb(255 255 255);
 }
 
 .nav-bar .left,
 .nav-bar .right {
     flex-basis: 50%;
+    line-height: 80px;
 }
 
-.burger {
+.nav-bar .logo {
+    vertical-align: middle;
+}
+
+.hamburger-menu {
     text-align: end;
+    vertical-align: middle;
 }
 
 /* UL */
@@ -132,30 +121,31 @@ header .nav-bar {
     display: none;
 }
 
-.li {
-    width: calc(100% / 5);
-    height: 70px;
-}
-
 /* MAIN */
 
 /* APPLICATION */
 .application .cards {
-    height: 100%;
-}
-
-.large-card {
-    width: 100%;
-    flex-basis: calc(100% / 5 * 2);
-    background-color: rgb(181, 221, 255);
-    border-radius: 10px;
-    margin-bottom: 20px;
+    /* height: 100%; */
 }
 
 .application .card {
     width: 100%;
     flex-basis: calc(100% / 5);
     background-color: rgb(181, 221, 255);
+    color: rgb(92, 113, 130);
+}
+
+.application .card h4 {
+    color: rgb(0, 132, 253);
+}
+
+.application .card a {
+    color: rgb(255 255 255);
+    background-color: rgb(0, 132, 253);
+}
+
+.application .card img {
+    width: 70%;
 }
 
 /* PLANNING */
@@ -193,18 +183,3 @@ header .nav-bar {
 .get-started .links {
     width: 100%;
 }
-
-/* @media screen and (min-width 768px) {
-    .application .cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .application .card {
-        width: calc(100% / 3 - 30px);
-    }
-
-    .application .large-card {
-        width: calc(100% / 3 * 2 - 30px);
-    }
-} */
