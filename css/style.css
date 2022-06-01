@@ -1,5 +1,6 @@
+/* RESET */
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -61,7 +62,7 @@ violet - rgb(151,146,228)
 }
 
 .padd-20 {
-    padding: 20px 15px;
+    padding: 20px 0;
 }
 
 .mb-20 {
@@ -100,12 +101,11 @@ violet - rgb(151,146,228)
 
 header .nav-bar {
     color: rgb(255 255 255);
-    padding: 0 15px;
 }
 
 .nav-bar .left,
 .nav-bar .right {
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     line-height: 80px;
 }
 
@@ -127,82 +127,86 @@ header .nav-bar {
 
 /* APPLICATION */
 
-.application .card {
+#intro .card {
     width: 100%;
     flex-basis: calc(100% / 5);
     background-color: rgb(181, 221, 255);
     color: rgb(92, 113, 130);
     align-items: center;
+    /* position: relative; */
 }
 
-.application .card h4 {
+#intro .card h4 {
     color: rgb(0, 132, 253);
     text-align: center;
 }
 
-.application .card a {
+#intro .card a {
     color: rgb(255 255 255);
     background-color: rgb(0, 132, 253);
     display: inline-block;
 }
 
-.application .card figure {
+#intro .card figure {
     text-align: center;
 }
 
-.application .card img {
+#intro .card img {
     width: 70%;
     display: block;
+    position: relative;
+    bottom: -20px;
+
 }
 
-.application .card span {
+#intro .card span {
     color: rgb(0, 132, 253);
     text-align: center;
     display: block;
 }
 
 /* PLANNING */
-.planning .text {
+#planning .text {
     flex-basis: 50%;
     width: 100%;
     color: rgb(255 255 255);
 }
 
-.planning .text img {
+#planning .text img {
     width: 100%;
 }
 
-.planning .card {
+#planning .card {
     flex-basis: 50%;
     width: 100%;
     background-color: rgb(255 255 255);
     text-align: center;
 }
 
-.planning .card img {
+#planning .card img {
     width: 100%;
 }
 
-.planning .card a {
+#planning .card a {
     background-color: rgb(151, 146, 228);
 }
 
 /* TESTIMONIALS */
-.testimonials {
+#testimonials {
     text-align: center;
 }
 
-.testimonials h2 {
+#testimonials h2 {
     color: rgb(151, 146, 228);
 }
 
-.testimonials .card {
+#testimonials .card {
     background-color: rgb(151, 146, 228);
     width: 100%;
     color: rgb(255 255 255);
 }
 
-.testimonials .card img {
+#testimonials .card img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -210,28 +214,28 @@ header .nav-bar {
 
 /* BENEFITS */
 
-.benefits h2 {
+#benefits h2 {
     color: rgb(255 255 255);
     text-align: center;
 }
 
-.benefits .card {
+#benefits .card {
     align-items: flex-start;
     background-color: rgb(255 255 255);
     width: 100%;
     color: rgb(167, 167, 167);
 }
 
-.benefits .card span {
+#benefits .card span {
     color: rgb(151, 146, 228);
     font-size: 48px;
 }
 
-.benefits .card h4 {
+#benefits .card h4 {
     color: rgb(151, 146, 228);
 }
 
-.benefits .card a {
+#benefits .card a {
     color: rgb(255 255 255);
     background-color: rgb(151, 146, 228);
 
@@ -239,30 +243,30 @@ header .nav-bar {
 
 /* ABOUT-US */
 
-.about-us .container {
+#about-us .container {
     align-items: flex-start;
 }
 
-.about-us .text h1 {
+#about-us .text h1 {
     color: rgb(151, 146, 228)
 }
 
-.about-us .linkedin {
+#about-us .linkedin {
     align-items: flex-start;
 }
 
-.about-us .linkedin img {
+#about-us .linkedin img {
     width: 50%;
     border-radius: 50%;
 }
 
-.about-us .linkedin p {
+#about-us .linkedin p {
     color: rgb(151, 146, 228);
     font-size: 30px;
     font-weight: bold;
 }
 
-.about-us .linkedin .btn {
+#about-us .linkedin .btn {
     background-color: rgb(151, 146, 228);
     color: rgb(255 255 255);
     padding: 8px 10px;
@@ -270,6 +274,6 @@ header .nav-bar {
 }
 
 /* GET-STARTED */
-.get-started .links {
+#get-started .links {
     width: 100%;
 }
