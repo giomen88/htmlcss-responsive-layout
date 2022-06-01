@@ -18,13 +18,15 @@
 
     .testimonials .card {
         flex-direction: row;
+        align-items: center;
     }
 
     .testimonials img {
         flex-basis: 20%;
+        margin-bottom: 0;
     }
 
-    .benefits .row {
+    .benefits .cards {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -33,18 +35,27 @@
         flex-basis: calc(50% - 30px);
     }
 
-    .about-us .row {
+    .about-us .container {
         flex-direction: row;
     }
 
     .about-us .text {
         flex-basis: 60%;
+        margin-left: 15px;
+        margin-right: 15px;
+
     }
 
     .about-us .linkedin {
         flex-basis: 40%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
+
+/* .about-us .linkedin img {
+    width: 100%;
+} */
 
 /* DESKTOP */
 
@@ -60,45 +71,82 @@
 
     .nav-bar ul {
         display: flex;
+        justify-content: space-between;
         list-style-type: none;
+        font-size: 0.8rem;
     }
 
-    .li {
+    .nav-bar a {
         width: calc(100% / 5);
-        height: 70px;
+        text-decoration: none;
+        color: rgb(255 255 255);
+
+    }
+
+    .nav-bar .btn {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0 0 0);
     }
 
     .application .cards {
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     .application .card {
+        flex-direction: row;
+        height: 250px;
         flex-basis: calc(100% / 3 - 30px);
+        margin: 15px 15px;
+        position: relative;
     }
 
-    .application .large-card {
+    .application .card .text,
+    .application .card figure {
+        flex-basis: 50%;
+    }
+
+    .application .card img {
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+        width: 180px;
+    }
+
+    .application .card:first-child {
         flex-basis: calc(100% / 3 * 2 - 30px);
     }
 
-    .planning .row {
+    .application .card:first-child h4 {
+        text-align: left;
+    }
+
+    .planning .container {
         flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     .planning .text,
     .planning .card {
-        flex-basis: 50%;
+        flex-basis: 30%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .testimonials .card {
         flex-direction: row;
+        align-items: center;
+
     }
 
     .testimonials img {
         flex-basis: 20%;
+        margin-bottom: 0;
     }
 
-    .benefits .row {
+    .benefits .cards {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -107,16 +155,20 @@
         flex-basis: calc(100% / 3 - 30px);
     }
 
-    .about-us .row {
+    .about-us .container {
         flex-direction: row;
     }
 
     .about-us .text {
-        flex-basis: 60%;
+        flex-basis: 70%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .about-us .linkedin {
-        flex-basis: 40%;
+        flex-basis: 30%;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
 }
@@ -125,7 +177,7 @@
 
 @media screen and (min-width: 1200px) {
     .container {
-        width: 60%;
+        max-width: 1400px;
     }
 
 }

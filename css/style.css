@@ -16,6 +16,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 main {
@@ -25,7 +26,6 @@ main {
 footer {
     width: 100%;
     background-color: rgb(51, 51, 51);
-    height: 200px;
 }
 
 /* UTILS */
@@ -37,7 +37,7 @@ violet - rgb(151,146,228)
 */
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -100,6 +100,7 @@ violet - rgb(151,146,228)
 
 header .nav-bar {
     color: rgb(255 255 255);
+    padding: 0 15px;
 }
 
 .nav-bar .left,
@@ -131,6 +132,7 @@ header .nav-bar {
     flex-basis: calc(100% / 5);
     background-color: rgb(181, 221, 255);
     color: rgb(92, 113, 130);
+    align-items: center;
 }
 
 .application .card h4 {
@@ -141,10 +143,16 @@ header .nav-bar {
 .application .card a {
     color: rgb(255 255 255);
     background-color: rgb(0, 132, 253);
+    display: inline-block;
+}
+
+.application .card figure {
+    text-align: center;
 }
 
 .application .card img {
     width: 70%;
+    display: block;
 }
 
 .application .card span {
@@ -180,24 +188,87 @@ header .nav-bar {
 }
 
 /* TESTIMONIALS */
+.testimonials {
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: rgb(151, 146, 228);
+}
+
 .testimonials .card {
     background-color: rgb(151, 146, 228);
-    flex-basis: 300px;
     width: 100%;
+    color: rgb(255 255 255);
+}
+
+.testimonials .card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
 }
 
 /* BENEFITS */
-.benefits .row {
-    height: 2000px;
+
+.benefits h2 {
+    color: rgb(255 255 255);
+    text-align: center;
 }
 
 .benefits .card {
+    align-items: flex-start;
     background-color: rgb(255 255 255);
-    flex-basis: 200px;
     width: 100%;
+    color: rgb(167, 167, 167);
+}
+
+.benefits .card span {
+    color: rgb(151, 146, 228);
+    font-size: 48px;
+}
+
+.benefits .card h4 {
+    color: rgb(151, 146, 228);
+}
+
+.benefits .card a {
+    color: rgb(255 255 255);
+    background-color: rgb(151, 146, 228);
+
 }
 
 /* ABOUT-US */
+
+.about-us .container {
+    align-items: flex-start;
+}
+
+.about-us .text h1 {
+    color: rgb(151, 146, 228)
+}
+
+.about-us .linkedin {
+    align-items: flex-start;
+}
+
+.about-us .linkedin img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.about-us .linkedin p {
+    color: rgb(151, 146, 228);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about-us .linkedin .btn {
+    background-color: rgb(151, 146, 228);
+    color: rgb(255 255 255);
+    padding: 8px 10px;
+
+}
+
 /* GET-STARTED */
 .get-started .links {
     width: 100%;
